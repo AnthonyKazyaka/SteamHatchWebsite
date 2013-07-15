@@ -9,41 +9,28 @@
         @Styles.Render("~/Content/BootstrapCss")
         @Scripts.Render("~/bundles/modernizr")
         @Scripts.Render("~/bundles/BootstrapJs")
-        @Scripts.Render("~/bundles/jquery")
+        @{//Scripts.Render("~/bundles/jquery")}
         @Scripts.Render("~/bundles/jqueryui")
     </head>
     <body>
         <header>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
-                </div>
-                <div class="float-right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                    </section>
-                    <nav>
-                        <ul id="menu">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
-                    </nav>
+        </header>
+        <div id="container">
+            <div class="nav">
+                <div class="navbar-inner">
+                    <a class="brand" href="#">SteamHatch Studios</a>
+                    <ul class="nav">
+                        <li><a href="#">Apps & Games</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
-        </header>
-        <div id="body">
-            @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
+            <section id="MainContent">
                 @RenderBody()
             </section>
         </div>
         <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
-                </div>
-            </div>
         </footer>
 
         @Scripts.Render("~/bundles/jquery")
