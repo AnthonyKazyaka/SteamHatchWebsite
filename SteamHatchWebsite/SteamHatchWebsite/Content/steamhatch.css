@@ -1,0 +1,26 @@
+﻿body {
+}
+
+.centered
+{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer
+{
+    margin-top: 5px;
+    font-size: .75em;
+    text-align: center;
+}
+
+.underline
+{
+    border-bottom: 5px solid #808080;
+}
+
+.underline-thin
+{
+    border-bottom: 1px solid #808080;
+}
