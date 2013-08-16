@@ -38,6 +38,15 @@ namespace SteamHatchWebsite
                         "~/Content/themes/base/jquery.ui.datepicker.css",
                         "~/Content/themes/base/jquery.ui.progressbar.css",
                         "~/Content/themes/base/jquery.ui.theme.css"));
+
+            bundles.Add(new StyleBundle("~/Content/BootstrapCss").Include(
+                        "~/Content/bootstrap.css",
+                        "~/Content/bootstrap-responsive.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/BootstrapJs").Include(
+                        "~/Scripts/bootstrap.js"));
+
+            bundles.Add(new StyleBundle("~/Content/SteamHatch").Include("~/Content/steamhatch.css"));
         }
     }
 }
