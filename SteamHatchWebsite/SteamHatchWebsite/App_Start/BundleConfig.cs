@@ -45,6 +45,8 @@ namespace SteamHatchWebsite
 
             bundles.Add(new ScriptBundle("~/bundles/BootstrapJs").Include(
                         "~/Scripts/bootstrap.js"));
+
+            bundles.Add(new StyleBundle("~/Content/SteamHatch").Include("~/Content/steamhatch.css"));
         }
     }
 }

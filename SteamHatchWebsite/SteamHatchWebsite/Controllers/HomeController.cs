@@ -15,9 +15,16 @@ namespace SteamHatchWebsite.Controllers
             return View();
         }
 
+        public ActionResult Projects()
+        {
+            ViewBag.Message = "Our Games & Apps";
+
+            return View();
+        }
+
         public ActionResult About()
         {
-            ViewBag.Message = "Your app description page.";
+            ViewBag.Message = "About Us.";
 
             return View();
         }
